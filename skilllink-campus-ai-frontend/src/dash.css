@@ -1,0 +1,297 @@
+.dash-root {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+/* HERO */
+.dash-hero {
+  background: linear-gradient(135deg, #5b5fff, #8f7bff);
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dash-hero-text h1 {
+  margin: 0 0 10px;
+}
+
+.dash-hero-text p {
+  opacity: 0.9;
+}
+
+.dash-hero-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.dash-hero-icon {
+  font-size: 60px;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: white;
+  color: #5b5fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: 1px solid white;
+  padding: 10px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* GRID */
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.dash-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #eee;
+}
+.dash-card-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+
+}
+.dash-card-header p{
+    font-size: 12px;
+  margin-bottom: 5px;
+  opacity: 0.6;
+}
+.dash-progress-text a{
+    font-size: 13px;
+}
+/* PLAN */
+.dash-progress-bar {
+  background: #eee;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0 20px;
+}
+
+.dash-progress-fill {
+  background: #5b5fff;
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+.dash-task {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #eee;
+}
+
+.dash-task.done {
+  background: #f5f5f5;
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.dash-checkbox {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #5b5fff;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.dash-task-left {
+  display: flex;
+  align-items: center;
+}
+
+.dash-time {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* SUBJECTS */
+.dash-subject-section p {
+  font-size: 12px;
+  margin-bottom: 5px;
+  opacity: 0.6;
+}
+
+.dash-tags span {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  margin: 3px;
+}
+
+.dash-tags.green span {
+  background: #e6f9ed;
+  color: #1c7c54;
+  font-weight: bolder;
+}
+
+.dash-tags.red span {
+  background: #ffe6e6;
+  color: #b91c1c;
+  font-weight: bolder;
+}
+
+/* ACTION BUTTONS */
+.action-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* Card container */
+.dash2-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Event row */
+.dash2-event {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.dash2-event:hover {
+  background: #f1f5f9;
+}
+
+/* Date box */
+.dash2-date {
+  background: #e0e7ff;
+  color: #4f46e5;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* Event text */
+.dash2-event-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.dash2-event-type {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0;
+}
+a:hover{
+    text-decoration: underline;
+}
+.action-btn.blue { background: #edeff5; color: #3b43c6; }
+.action-btn.gray { background: #f6f0f0; color :#6b7280 ; align-items: center; width: 100%;}
+.action-btn.amber { background: #fff7e2; color: #f59e0b; }
+.action-btn.blue:hover { background: #d9def0; color: #3b43c6; }
+.action-btn.gray:hover { background: #eaecf3; color :#6b7280}
+.action-btn.amber:hover { background: #fcf2d4; color: #f59e0b; }
+/* TABLET */
+@media (max-width: 900px) {
+
+  .dash-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .dash-hero-icon {
+    align-self: center;
+  }
+
+  .dash-grid {
+    grid-template-columns: 1fr; /* 1 card par ligne */
+  }
+
+  .dash-card-header {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .action-btn {
+    font-size: 14px;
+  }
+}
+
+/* PHONE */
+@media (max-width: 600px) {
+
+  .dash-root {
+    padding: 12px;
+  }
+
+  .dash-hero {
+    padding: 20px;
+  }
+
+  .dash-hero-text h1 {
+    font-size: 20px;
+  }
+
+  .dash-hero-text p {
+    font-size: 14px;
+  }
+
+  .dash-hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dash-card {
+    padding: 15px;
+  }
+
+  .dash-task {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .dash-time {
+    align-self: flex-end;
+  }
+}

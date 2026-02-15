@@ -1,0 +1,248 @@
+/* ===== PAGE CONTAINER ===== */
+.how-section {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+/* ===== TITLE ===== */
+.how-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #111827;
+
+}
+
+.how-subtitle {
+  font-size: 18px;
+  color: #1651c7;
+  margin: 12px 0 60px;
+}
+
+/* ===== GRID ===== */
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  justify-items: center; 
+  align-items: center;
+}
+
+/* ===== CARD ===== */
+.how-card {
+  background: #ffffff;
+  padding: 36px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  max-width: 360px; /* ✅ مهم للتوسيط */
+  width: 100%;
+}
+
+.how-card:hover {
+  transform: translateY(-6px);
+}
+
+.step-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: #4f46e5;
+}
+
+.how-card h3 {
+  font-size: 22px;
+  margin: 18px 0 12px;
+  color: #111827;
+}
+
+.how-card p {
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* ===== WHY SECTION ===== */
+.why-section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.why-section h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.why-section ul {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block; /* ✅ توسيط القائمة */
+  text-align: left;
+}
+
+.why-section li {
+  font-size: 16px;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .how-title {
+    font-size: 36px;
+  }
+
+  .how-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .how-section {
+    padding: 60px 16px;
+  }
+
+  .how-title {
+    font-size: 30px;
+  }
+
+  .how-subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .how-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .how-card {
+    padding: 24px;
+  }
+}
+/* ===== PAGE CONTAINER ===== */
+.how-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  font-family: "Inter", sans-serif;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+/* ===== TITLE ===== */
+.how-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.how-subtitle {
+  font-size: 18px;
+  color: #6b7280;
+  margin: 12px 0 60px;
+}
+
+/* ===== GRID ===== */
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  justify-items: center; /* ✅ توسيط الكروت أفقيًا */
+}
+
+/* ===== CARD ===== */
+.how-card {
+  background: #ffffff;
+  padding: 36px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  max-width: 360px; /* ✅ مهم للتوسيط */
+  width: 100%;
+}
+
+.how-card:hover {
+  transform: translateY(-6px);
+}
+
+.step-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: #4f46e5;
+}
+
+.how-card h3 {
+  font-size: 22px;
+  margin: 18px 0 12px;
+  color: #111827;
+}
+
+.how-card p {
+  font-size: 16px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* ===== WHY SECTION ===== */
+.why-section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.why-section h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.why-section ul {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block; /* ✅ توسيط القائمة */
+  text-align: left;
+}
+
+.why-section li {
+  font-size: 16px;
+  color: #374151;
+  margin-bottom: 10px;
+}
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .how-title {
+    font-size: 36px;
+  }
+
+  .how-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .how-section {
+    padding: 60px 16px;
+  }
+
+  .how-title {
+    font-size: 30px;
+  }
+
+  .how-subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .how-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .how-card {
+    padding: 24px;
+  }
+}

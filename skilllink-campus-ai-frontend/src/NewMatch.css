@@ -1,0 +1,47 @@
+.new-match {
+    position: absolute;
+    bottom: 40px;
+    left: -40px;
+  
+    background: white;
+    padding: 14px 16px;
+    border-radius: 16px;
+    width: 220px;
+  
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .new-match p {
+    font-size: 12px;
+    color: #94a3b8;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .avatar {
+    width: 34px;
+    height: 34px;
+    background: #5b5cff;
+    color: white;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

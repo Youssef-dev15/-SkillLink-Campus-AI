@@ -1,0 +1,522 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #0f172a;
+  background: #ffffff;
+}
+
+/* ================= APP ================= */
+.app {
+  padding-top: 90px;
+ 
+}
+
+/* ================= BUTTONS ================= */
+button {
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+}
+
+.btn-primary,
+.cta-btn {
+  background: #4f46e5;
+  color: white;
+  padding: 12px 26px;
+}
+
+.btn-primary:hover,
+.cta-btn:hover,
+.btn-register:hover {
+  background: #4338ca;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.35);
+}
+
+.btn-login {
+  background: transparent;
+  color: #4f46e5;
+  padding: 8px 18px;
+}
+
+.btn-login:hover {
+  background: rgba(79, 70, 229, 0.08);
+  transform: translateY(-1px);
+}
+
+.btn-register {
+  background: #4f46e5;
+  color: white;
+  padding: 8px 18px;
+}
+
+/* ================= NAVBAR ================= */
+
+
+
+
+.header12 {
+  background-color: rgba(255, 255, 255, 0.85);
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100000;
+}
+
+/* Logo */
+.logo-link {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* أيقونة SL */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.logo-icon {
+  width: 20px;
+  height: 24px;
+  background-color: #5b5bf7;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logo-main {
+  color: #000000;
+}
+
+.logo-sub {
+  color: #5b5bf7;
+  margin-left: 6px;
+  font-weight: 500;
+}
+
+
+
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #5b5cff;
+}
+
+/* Actions */
+.actions1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background: #5b5cff;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #4949e6;
+}
+
+/* ================= HERO ================= */
+.hero {
+  padding: 45px 0;
+  margin-bottom: 20px;
+}
+
+.hero-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 4%;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2.6rem;
+  line-height: 1.15;
+}
+
+.hero-content p {
+  margin-top: 14px;
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.hero-buttons {
+  margin-top: 22px;
+  display: flex;
+  gap: 12px;
+}
+
+.hero-image {
+  width: 50%;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* ================= FEATURES ================= */
+.features {
+  padding: 45px 4%;
+  margin-bottom: 20px;
+  background: #ebeff3;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 1.9rem;
+  margin-top: 10px;
+}
+
+.section-desc {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.feature-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* ===== FEATURE CARD ANIMATION ===== */
+.card {
+  position: relative;
+  padding: 22px;
+  border-radius: 16px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #4f46e5;
+  border-radius: 16px 16px 0 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.15);
+}
+
+.card p {
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4f46e5;
+  font-weight: 600;
+  transition: transform 0.25s ease;
+}
+
+.card a:hover {
+  transform: translateX(6px);
+}
+
+/* ================= CTA ================= */
+.cta {
+  padding: 50px 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cta h1 {
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+}
+
+.cta p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  border-top: 1px solid #e5e7eb;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #6b7280;
+ 
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand {
+  font-weight: 600;
+  color: #374151;
+}
+
+.footer-center {
+  text-align: center;
+  flex: 1;
+}
+
+.footer-right {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-right a {
+  text-decoration: none;
+  color: #6b7280;
+}
+
+.footer-right a:hover {
+  color: #111827;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  /* ===== HEADER ===== */
+  .header {
+    padding: 14px 24px;
+  }
+
+  .logo-icon {
+    width: 36px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
+
+  .nav {
+    gap: 20px;
+  }
+
+  .actions {
+    gap: 14px;
+  }
+
+  .btn-primary {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  /* ===== HERO ===== */
+  .hero-content h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  /* ===== FEATURES ===== */
+  .features h2 {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    font-size: 13px;
+    padding: 12px 16px;
+  }
+}
+@media (max-width: 600px) {
+  /* ===== APP ===== */
+  .app {
+    padding-top: 70px;
+  }
+
+  /* ===== HEADER ===== */
+  .header {
+    padding: 12px 16px;
+  }
+
+  .nav {
+    display: none; /* تخبي navigation */
+  }
+
+  .logo-icon {
+    width: 32px;
+    height: 36px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  .logo-text {
+    font-size: 16px;
+  }
+
+ 
+
+  .btn-primary {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    padding: 30px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+    line-height: 1.25;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* ===== FEATURES ===== */
+  .features {
+    padding: 35px 16px;
+  }
+
+  .features h2 {
+    font-size: 1.4rem;
+  }
+
+  .section-desc {
+    font-size: 0.85rem;
+  }
+
+  .card {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+  }
+
+  /* ===== CTA ===== */
+  .cta h1 {
+    font-size: 1.5rem;
+  }
+
+  .cta p {
+    font-size: 0.85rem;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .footer-right {
+    gap: 12px;
+  }
+}
+html, body, #root {
+  height: 100%;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 90px;
+}
+.page-content {
+  flex: 1;
+}
+

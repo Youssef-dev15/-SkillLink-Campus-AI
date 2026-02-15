@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "skilllink-campus-ai-backend",
+			"path": "../../skilllink-campus-ai-backend"
+		},
+		{
+			"name": "skilllink-campus-ai-frontend",
+			"path": ".."
+		}
+	]
+}

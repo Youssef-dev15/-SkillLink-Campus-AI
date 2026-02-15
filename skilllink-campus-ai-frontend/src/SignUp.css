@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+.signup-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 6rem 1rem 3rem;
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.signup-container {
+  max-width: 64rem;
+  margin: auto;
+}
+
+.signup-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.signup-card {
+  background: white;
+  border-radius: 2.5rem;
+  box-shadow: 0 25px 50px rgba(0,0,0,.15);
+  overflow: hidden;
+}
+
+.signup-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.signup-sidebar {
+  background: #4f46e5;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.profile-picture {
+  width: 160px;
+  height: 160px;
+  margin: auto;
+  border-radius: 50%;
+  background: #6366f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: .3s;
+}
+
+.profile-picture:hover .profile-overlay {
+  opacity: 1;
+}
+
+.sidebar-name {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.sidebar-domain {
+  font-size: .85rem;
+  opacity: .8;
+}
+
+.signup-content {
+  padding: 3rem;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+}
+
+.form-section h4 {
+  margin-bottom: .75rem;
+  color: #4f46e5;
+}
+
+.strong-title {
+  color: #059669;
+}
+
+.weak-title {
+  color: #ea580c;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+}
+.spann{
+  margin:0.0;
+  padding: 0.0;
+}
+.form-input {
+  border-radius: .75rem;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: black;
+  height: 35px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: .5rem;
+}
+
+.tag {
+  padding: .25rem .75rem;
+  border-radius: .5rem;
+  font-size: .75rem;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.tag-skill {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.tag-strong {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.tag-weak {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+.tag-input {
+  display: flex;
+  gap: .5rem;
+}
+
+.tag-input input {
+  flex: 1;
+  padding: .5rem;
+  border-radius: .5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.tag-input button {
+  padding: 0 .75rem;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.btn-strong {
+  background: #a7f3d0;
+  color: #065f46;
+  height: 36px;
+}
+
+.btn-weak {
+  background: #fed7aa;
+  color: #9a3412;
+  height: 36px;
+}
+.btn-sk {
+  background: #000000;
+  color: white;
+  height: 36px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background: #4f46e5;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.remove{
+   background-color: transparent;
+   top: 0;
+   color: #ff1616;
+   margin-top: 0;
+   margin: 0 .0.0.0;
+   padding: 0.0.0.0;
+
+
+   
+}
+button:focus {
+  outline: none;
+}
+.auth-divider {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0 1.5rem;
+  color: #94a3b8;
+  font-size: 0.75rem;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e2e8f0;
+}
+
+.auth-divider span {
+  padding: 0 1rem;
+  font-weight: bold;
+}
+
+.login-section {
+  text-align: center;
+}
+.login-btn {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 1rem;
+  background: #e2e8fe;
+  color: #0f172a;
+  font-weight: bold;
+  border: 1px solid #e2e8a0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.login-btn:hover {
+  background: #e2e8f0;
+}
+
+
+@media (max-width: 768px) {
+  .signup-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .signup-content {
+    padding: 2rem;
+  }
+}
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.skill-level {
+  font-size: 12px;
+  opacity: 0.7;
+}
+input{
+  background-color: white;
+  color: #000000;
+}
+.error-message {
+  background: #ffe5e5;
+  color: #b00020;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.success-message {
+  background: #e6fffa;
+  color: #047857;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
