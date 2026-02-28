@@ -48,8 +48,9 @@ Platform Features
 
 Technologies Used
 
-Frontend: HTML / CSS / JavaScript Backend: Node.js / Django Database:
-MongoDB / MySQL AI Integration: OpenAI API / Custom ML Model
+Frontend: raect.js
+Backend: Node.js Database:
+MongoDB  AI Integration: OpenAI API / Custom ML Model
 
 Installation
 
@@ -64,4 +65,5 @@ Installation
 
 Author
 
-Your Name GitHub: https://github.com/your-username
+Youssef ben Othmen
+GitHub: https://github.com/Youssef-dev15
