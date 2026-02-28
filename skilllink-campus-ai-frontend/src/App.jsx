@@ -33,7 +33,7 @@ function App() {
           <Route path="/verify-failed" element={<VerifyFailed />} />
           </Route>
     <Route element={ <ProtectedRoute><Dashboard></Dashboard></ProtectedRoute>}>
-    <Route path="/dashboard" element={<Dash />} />
+    <Route path="/Dashboard" element={<Dash />} />
      <Route path="/Profile" element={<Profile />} />
      <Route path="/Daily-plan" element={<Daily/>} />
      <Route path="/Smart-Matching" element={<Match/>} />

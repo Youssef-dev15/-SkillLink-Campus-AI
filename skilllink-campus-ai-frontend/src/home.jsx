@@ -1,13 +1,13 @@
 // Home.jsx
 import React from "react";
 import "./home.css";
-import{Outlet , Link , Navigate } from "react-router-dom";
+import{Outlet , Link , Navigate,  } from "react-router-dom";
 
 
 export default function Home() {
- const token =localStorage.getItem("token");
+  const token =localStorage.getItem("token");
  if(token){
-    return <Navigate to="/dashboard" replace/>;
+    return <Navigate to="/dashboard" />;
  } 
   return (
       <div className="app">

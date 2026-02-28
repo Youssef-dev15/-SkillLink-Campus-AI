@@ -2,7 +2,7 @@ import "./login.css";
 import { signInWithPopup } from "firebase/auth";
 import { useState } from "react";
 import { auth, provider } from "./firebase";
-import { Link, Navigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { sendPasswordResetEmail } from "firebase/auth";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
@@ -16,7 +16,7 @@ export default function Login() {
   "auth/too-many-requests": "Too many attempts, try later ⏳",
   "auth/network-request-failed": "Network error ❌",
 };
-
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading,setLoading]=useState(false);
@@ -41,7 +41,7 @@ const loginGoogle = async () => {
     if (res.ok) {
       setLoading(false);
       localStorage.setItem("token", data.token);
-      window.location.href = "/Dashbord";
+      navigate ("/dashboard");
     } else {
       setErrorMessage(data.error);
     }
@@ -70,7 +70,7 @@ const loginUser = async () => {
 
     if (res.ok) {
       localStorage.setItem("token", data.token);
-      window.open("/Dashboard", "_blank");
+      navigate ("/dashboard");
 
     } else {
       setErrorMessage(data.error);
