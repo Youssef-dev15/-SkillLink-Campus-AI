@@ -48,7 +48,7 @@ Platform Features
 
 Technologies Used
 
-Frontend: raect.js
+Frontend: react.js
 Backend: Node.js Database:
 MongoDB  AI Integration: OpenAI API / Custom ML Model
 
